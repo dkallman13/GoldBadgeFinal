@@ -43,7 +43,7 @@ namespace Cafe
                         ShowMeals();
                         break;
                     case "2":
-
+                        AddMeal();
                         break;
                     case "3":
                         ShowMeals();
@@ -64,7 +64,7 @@ namespace Cafe
         }
         public void ShowMeals()
         {
-
+            Console.Clear();
             List<Meal> mealmenu = menu.FindAllMeals();
             Console.WriteLine("number    |          name           |               price");
             foreach (Meal meal in mealmenu)
@@ -93,7 +93,40 @@ namespace Cafe
             string name = Console.ReadLine();
             Console.WriteLine("input a description of the meal");
             string desc = Console.ReadLine();
-
+            Console.WriteLine("input the price of the meal");
+            double price = double.Parse(Console.ReadLine());
+            bool isaddingingreds = true;
+            List<PossibleIngreds> ingredients = new List<PossibleIngreds>();
+            while (isaddingingreds)
+            {
+                Console.WriteLine("input an ingredient number:");
+                foreach (int i in Enum.GetValues(typeof(PossibleIngreds)))
+                {
+                    Console.WriteLine($"{i}. {Enum.GetName(typeof(PossibleIngreds), i)}");
+                }
+                Console.WriteLine($"{Enum.GetValues(typeof(PossibleIngreds)).Length}. exit ");
+                string input = Console.ReadLine();
+                foreach (int i in Enum.GetValues(typeof(PossibleIngreds)))
+                {
+                    if(int.Parse(input) == i)
+                    {
+                        ingredients.Add((PossibleIngreds)Enum.Parse(typeof(PossibleIngreds), Enum.GetName(typeof(PossibleIngreds), i)));
+                    }
+                }
+                if(int.Parse(input) == Enum.GetValues(typeof(PossibleIngreds)).Length)
+                {
+                    isaddingingreds = false;
+                }
+            }
+            Meal newmeal = new Meal(number, name, desc, ingredients, price);
+            if (menu.Add(newmeal))
+            {
+                Console.WriteLine("successfully added new meal");
+            }
+            else
+            {
+                Console.WriteLine("failed to add new meal");
+            }
         }
     }
 }
