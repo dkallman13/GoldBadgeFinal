@@ -8,7 +8,7 @@ namespace CafeRepo
 {
     public class Menu
     {
-        public List<Meal> _menuList { get; }
+        public List<Meal> _menuList { get; private set; } = new List<Meal>();
         //crud
         public bool Add(Meal meal)
         {
