@@ -31,11 +31,16 @@ namespace CafeTest
             Assert.AreEqual(number1.Description, menu.FindMealByNumber(1).Description);
             Assert.AreEqual(number1.Price, menu.FindMealByNumber(1).Price);
             Assert.AreEqual(number1.Ingredients, menu.FindMealByNumber(1).Ingredients);
-            Assert.AreEqual(number15.Name, menu.FindMealByNumber(15).Name);
-            Assert.AreEqual(number15.Description, menu.FindMealByNumber(15).Description);
-            Assert.AreEqual(number15.Price, menu.FindMealByNumber(15).Price);
-            Assert.AreEqual(number15.Ingredients, menu.FindMealByNumber(15).Ingredients);
 
+            //test the other half of methods, the findmealbyname and remove function
+            Assert.AreEqual(number15.Name, menu.FindMealByName("burger king foot lettuce burger").Name);
+            Assert.AreEqual(number15.Description, menu.FindMealByName("burger king foot lettuce burger").Description);
+            Assert.AreEqual(number15.Price, menu.FindMealByName("burger king foot lettuce burger").Price);
+            Assert.AreEqual(number15.Ingredients, menu.FindMealByName("burger king foot lettuce burger").Ingredients);
+
+            menu.Remove(15);
+            Assert.IsNull(menu.FindMealByNumber(15));
+            //not exactly sure how to test the last function since it returns a private variable in the menu class. but i can verify manually that it works
 
         }
     }

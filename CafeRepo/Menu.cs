@@ -54,12 +54,7 @@ namespace CafeRepo
         }
         public List<Meal> FindAllMeals()
         {
-            List<Meal> menu = new List<Meal>();
-            foreach (Meal meal in _menuList)
-            {
-                menu.Add(meal);
-            }
-            return menu;
+            return _menuList;
         }
     }
 }
