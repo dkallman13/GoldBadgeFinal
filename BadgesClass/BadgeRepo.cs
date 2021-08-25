@@ -25,6 +25,14 @@ namespace BadgesClass
             Badge badge = new Badge(id, doors);
             _badgeRepo[id] = badge;
         }
-
+        public void RevokeDoorAccess(int id)
+        {
+            Badge badge = new Badge(id, new List<string>());
+            _badgeRepo[id] = badge;
+        }
+        public Dictionary<int, Badge> GetBadges()
+        {
+            return _badgeRepo;
+        }
     }
 }
