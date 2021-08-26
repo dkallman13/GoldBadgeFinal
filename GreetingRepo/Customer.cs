@@ -15,13 +15,12 @@ namespace GreetingRepo
         public CustomerType Type {get; set;}
 
         
-        public Customer(string firstname, string lastname, CustomerType type)
+        public Customer(string firstname, string lastname, CustomerType type, int id)
         {
             FirstName = firstname;
             LastName = lastname;
             Type = type;
-            Random randy = new Random();
-            ID = randy.Next(1, 30001);
+            ID = id;
         }
 
     }

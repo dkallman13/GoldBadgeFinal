@@ -14,9 +14,7 @@ namespace GreetingUI
         public void Seed()
         {
             Repo.Add("dank", "the meme man", CustomerType.Past);
-            Thread.Sleep(5);
             Repo.Add("Chad", "Hammers-Clock", CustomerType.Potential);
-            Thread.Sleep(5);
             Repo.Add("Veronica", "Hammers-Clock", CustomerType.Current);
         }
         public void Run()

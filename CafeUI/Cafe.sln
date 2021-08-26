@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingRepo", "..\Greeting
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingUI", "..\GreetingUI\GreetingUI.csproj", "{21E057C5-9DFB-48BF-A518-CB1D25C83103}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingTest", "..\GreetingTest\GreetingTest.csproj", "{7A25C4BF-F21A-4BA9-ACA9-C19A06638021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A25C4BF-F21A-4BA9-ACA9-C19A06638021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A25C4BF-F21A-4BA9-ACA9-C19A06638021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A25C4BF-F21A-4BA9-ACA9-C19A06638021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A25C4BF-F21A-4BA9-ACA9-C19A06638021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

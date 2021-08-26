@@ -23,7 +23,7 @@ namespace GreetingRepo
             }
             else
             {
-                CustomersDirectory.Add(new Customer(firstname, lastname, type));
+                CustomersDirectory.Add(new Customer(firstname, lastname, type, CustomersDirectory.Count));
             }
         }
         public bool Update(int id, string firstname, string lastname, CustomerType type)
