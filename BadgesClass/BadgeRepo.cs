@@ -8,13 +8,13 @@ namespace BadgesClass
 {
     public class BadgeRepo
     {
-        private Dictionary<int, Badge> _badgeRepo { get; set; }
+        private Dictionary<int, Badge> _badgeRepo { get; set; } = new Dictionary<int, Badge>();
         
         public bool AddBadge(Badge badge)
         {
-            int length = _badgeRepo.Count;
+            int length = _badgeRepo.Count();
             _badgeRepo.Add(badge.ID, badge);
-            if (_badgeRepo.Count > length)
+            if (_badgeRepo.Count() > length)
             {
                 return true;
             }
