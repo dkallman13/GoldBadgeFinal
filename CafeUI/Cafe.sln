@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeUI", "..\BadgeUI\Badge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadgeTest", "..\BadgeTest\BadgeTest.csproj", "{CA74CA88-D448-4B2A-9D57-D12838D536FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingRepo", "..\GreetingRepo\GreetingRepo.csproj", "{5085A536-0773-4059-B475-AA938E7D64B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingUI", "..\GreetingUI\GreetingUI.csproj", "{21E057C5-9DFB-48BF-A518-CB1D25C83103}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{CA74CA88-D448-4B2A-9D57-D12838D536FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA74CA88-D448-4B2A-9D57-D12838D536FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA74CA88-D448-4B2A-9D57-D12838D536FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5085A536-0773-4059-B475-AA938E7D64B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5085A536-0773-4059-B475-AA938E7D64B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5085A536-0773-4059-B475-AA938E7D64B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5085A536-0773-4059-B475-AA938E7D64B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E057C5-9DFB-48BF-A518-CB1D25C83103}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
